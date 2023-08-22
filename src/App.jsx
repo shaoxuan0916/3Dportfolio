@@ -21,9 +21,9 @@ const App = () => {
           <Navbar />
           {/* <Hero /> */}
         </div>
-        <Works />
-        <Experience />
         <About />
+        <Experience />
+        <Works />
         {/* <Tech /> */}
         {/* <Feedbacks /> */}
         <div className="relative z-0">
