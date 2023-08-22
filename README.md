@@ -1,6 +1,6 @@
 # Shao Xuan | Portfolio
 
-#### Link: 
+#### Link: https://shaoxuan.vercel.app/
 
 ###### Skill(s) that I've used in this project:
 - React
