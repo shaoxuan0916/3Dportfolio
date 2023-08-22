@@ -23,6 +23,7 @@ const App = () => {
             <StarsCanvas />
           </div>
         </div>
+        {/* <StarsCanvas /> */}
         <About />
         <Experience />
         <Tech />
