@@ -1,35 +1,41 @@
-import React, { useRef, useState } from "react"
-import { motion } from "framer-motion"
-import emailjs from "@emailjs/browser"
+import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
-import { styles } from "../styles"
-import { EarthCanvas } from "./canvas"
-import { SectionWrapper } from "../hoc"
-import { slideIn } from "../utils/motion"
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef()
+  const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
-  })
+  });
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e
-    const { name, value } = target
+    const { target } = e;
+    const { name, value } = target;
 
     setForm({
       ...form,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
+
+    if (form.name === "" || form.email === "" || form.message === "") {
+      alert("Please fill in all fields!");
+      setLoading(false);
+      return;
+    }
 
     emailjs
       .send(
@@ -49,23 +55,23 @@ const Contact = () => {
       )
       .then(
         () => {
-          setLoading(false)
-          alert("Thank you. I will get back to you as soon as possible.")
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
             email: "",
             message: "",
-          })
+          });
         },
         (error) => {
-          setLoading(false)
-          console.error(error)
+          setLoading(false);
+          console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.")
+          alert("Ahh, something went wrong. Please try again.");
         }
-      )
-  }
+      );
+  };
 
   return (
     <div
@@ -133,7 +139,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Contact, "contact")
+export default SectionWrapper(Contact, "contact");
