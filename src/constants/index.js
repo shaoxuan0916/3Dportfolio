@@ -1,7 +1,5 @@
 import {
   mobile,
-  backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -10,19 +8,8 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   nextjs,
   simplicitic,
   freelancer,
@@ -32,7 +19,8 @@ import {
   tellme,
   tiktik,
   bantingcomm,
-} from "../assets"
+  courtsite,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -47,7 +35,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-]
+];
 
 const services = [
   {
@@ -58,7 +46,7 @@ const services = [
     title: "Frontend Developer",
     icon: mobile,
   },
-]
+];
 
 const technologies = [
   {
@@ -105,7 +93,7 @@ const technologies = [
     name: "git",
     icon: git,
   },
-]
+];
 
 const experiences = [
   {
@@ -132,7 +120,19 @@ const experiences = [
       "Understanding client's vision and goals to creating successful web solutions.",
     ],
   },
-]
+  {
+    title: "Frontend Developer",
+    company_name: "Courtsite",
+    icon: courtsite,
+    iconBg: "#4460f2",
+    date: "September 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using Nextjs, GraphQL and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+];
 
 const testimonials = [
   // {
@@ -159,7 +159,7 @@ const testimonials = [
   //   company: "456 Enterprises",
   //   image: "https://randomuser.me/api/portraits/women/6.jpg",
   // },
-]
+];
 
 const projects = [
   {
@@ -288,6 +288,6 @@ const projects = [
     image: bantingcomm,
     source_code_link: "https://github.com/shaoxuan0916/bantingcomm",
   },
-]
+];
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, testimonials, projects };
