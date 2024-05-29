@@ -1,12 +1,12 @@
-import React from "react"
-import Tilt from "react-parallax-tilt"
-import { motion } from "framer-motion"
+import React from "react";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from "../styles"
-import { github } from "../assets"
-import { SectionWrapper } from "../hoc"
-import { projects } from "../constants"
-import { fadeIn, textVariant } from "../utils/motion"
+import { styles } from "../styles";
+import { github } from "../assets";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  url,
   source_code_link,
 }) => {
   return (
@@ -35,7 +36,9 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() =>
+                window.open(source_code_link ? source_code_link : url, "_blank")
+              }
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -64,8 +67,8 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
   return (
@@ -94,7 +97,7 @@ const Works = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "");

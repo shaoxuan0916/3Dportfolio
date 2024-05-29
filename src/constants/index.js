@@ -20,6 +20,7 @@ import {
   tiktik,
   bantingcomm,
   courtsite,
+  tpco,
 } from "../assets";
 
 export const navLinks = [
@@ -39,7 +40,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Engineer",
     icon: web,
   },
   {
@@ -115,19 +116,19 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2022 - Present",
     points: [
-      "Developing and maintaining web applications using Nextjs, React.js, Firebase and other related technologies.",
+      "Developing and maintaining web applications & e-commerce website using Nextjs, React.js, Firebase and other related technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Understanding client's vision and goals to creating successful web solutions.",
     ],
   },
   {
-    title: "Frontend Developer",
-    company_name: "Courtsite",
-    icon: courtsite,
-    iconBg: "#4460f2",
+    title: "Software Engineer",
+    company_name: "EZ Chain Innovation",
+    icon: freelancer,
+    iconBg: "#E6DEDD",
     date: "September 2023 - Present",
     points: [
-      "Developing and maintaining web applications using Nextjs, GraphQL and other related technologies.",
+      "Developing and maintaining Web 2 & Web 3 applications using NextJS, NestJS, GraphQL, Ether.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
@@ -163,26 +164,27 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Threads Clone",
+    name: "E-commerce website",
     description:
-      "Develop Threads, Next.js 13 app that skyrocketed to 100 million sign-ups in less than 5 days, and dethroned giants like Twitter, ChatGPT, and TikTok to become the fastest-growing app ever!",
+      "This is an E-commerce website that I built for a SME using Nextjs, Typescript and MedusaJS. It contains all the basic functions and features that an e-commerce website should have, such as Add To Cart, Check Out, Make Payment with Stripe, Check Order Details, Admin Back Office etc.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "medusajs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: threads,
-    source_code_link: "https://github.com/shaoxuan0916/threads_clone",
+    image: tpco,
+    url: "https://www.theparentcompany.com.my",
   },
+
   {
     name: "DALL-E Clone",
     description:
@@ -286,8 +288,29 @@ const projects = [
       },
     ],
     image: bantingcomm,
-    source_code_link: "https://github.com/shaoxuan0916/bantingcomm",
+    url: "https://www.bantingcomm.com.my",
   },
+  // {
+  //   name: "Threads Clone",
+  //   description:
+  //     "Develop Threads, Next.js 13 app that skyrocketed to 100 million sign-ups in less than 5 days, and dethroned giants like Twitter, ChatGPT, and TikTok to become the fastest-growing app ever!",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: threads,
+  //   source_code_link: "https://github.com/shaoxuan0916/threads_clone",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

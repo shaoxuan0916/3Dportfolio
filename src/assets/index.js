@@ -39,6 +39,7 @@ import threads from "./threads.png";
 import tellme from "./tellme.png";
 import tiktik from "./tiktik.png";
 import bantingcomm from "./bantingcomm.png";
+import tpco from "./tpco.png";
 
 export {
   moneywho,
@@ -79,4 +80,5 @@ export {
   tiktik,
   bantingcomm,
   courtsite,
+  tpco,
 };
