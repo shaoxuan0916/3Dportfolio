@@ -20,6 +20,7 @@ import {
   tiktik,
   bantingcomm,
   courtsite,
+  toonrole,
   tpco,
 } from "../assets";
 
@@ -44,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Frontend Developer",
+    title: "Full-Stack Developer",
     icon: mobile,
   },
 ];
@@ -184,7 +185,27 @@ const projects = [
     image: tpco,
     url: "https://www.theparentcompany.com.my",
   },
-
+  {
+    name: "ToonRole.ai",
+    description:
+      "ToonRole.ai is an interactive, story-driven platform where users can engage with AI characters in immersive narratives. Instead of simple avatars, ToonRole.ai offers a range of characters with unique backgrounds, personalities, and evolving storylines that users can explore and influence.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "text-to-speech",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: toonrole,
+    source_code_link: "https://toonrole.ai",
+  },
   {
     name: "DALL-E Clone",
     description:
@@ -206,27 +227,27 @@ const projects = [
     image: dalle,
     source_code_link: "https://github.com/shaoxuan0916/Dall-e-clone",
   },
-  {
-    name: "Money Who",
-    description:
-      "A simple web application that calculate who owes who money. It provides the easiest way to record shared expenses with friends and family. No pen or paper needed. Just [Money Who] !",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: moneywho,
-    source_code_link: "https://github.com/shaoxuan0916/money_who",
-  },
+  // {
+  //   name: "Money Who",
+  //   description:
+  //     "A simple web application that calculate who owes who money. It provides the easiest way to record shared expenses with friends and family. No pen or paper needed. Just [Money Who] !",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "firebase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: moneywho,
+  //   source_code_link: "https://github.com/shaoxuan0916/money_who",
+  // },
   {
     name: "Tell Me",
     description:
@@ -290,27 +311,6 @@ const projects = [
     image: bantingcomm,
     url: "https://www.bantingcomm.com.my",
   },
-  // {
-  //   name: "Threads Clone",
-  //   description:
-  //     "Develop Threads, Next.js 13 app that skyrocketed to 100 million sign-ups in less than 5 days, and dethroned giants like Twitter, ChatGPT, and TikTok to become the fastest-growing app ever!",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: threads,
-  //   source_code_link: "https://github.com/shaoxuan0916/threads_clone",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

@@ -40,6 +40,7 @@ import tellme from "./tellme.png";
 import tiktik from "./tiktik.png";
 import bantingcomm from "./bantingcomm.png";
 import tpco from "./tpco.png";
+import toonrole from "./toonrole.png";
 
 export {
   moneywho,
@@ -81,4 +82,5 @@ export {
   bantingcomm,
   courtsite,
   tpco,
+  toonrole,
 };
