@@ -1,11 +1,11 @@
-import React from "react"
-import Tilt from "react-parallax-tilt"
-import { motion } from "framer-motion"
+import React from "react";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from "../styles"
-import { services } from "../constants"
-import { SectionWrapper } from "../hoc"
-import { fadeIn, textVariant } from "../utils/motion"
+import { styles } from "../styles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -33,7 +33,7 @@ const ServiceCard = ({ index, title, icon }) => (
       </div>
     </motion.div>
   </Tilt>
-)
+);
 
 const About = () => {
   return (
@@ -47,18 +47,30 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        {/* I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life! */}
-        I'm a passionate and skilled frontend developer with expertise in
-        TypeScript, React and Next.js. With a keen eye for creating visually
-        appealing and user-friendly interfaces, I specialize in turning design
-        concepts into interactive and dynamic web applications. I'm a quick
-        learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems.
-        Let's work together to bring your ideas to life!
+        I&apos;m a passionate full-stack developer with expertise in{" "}
+        <span className="font-bold">
+          Next.js, React, TypeScript, and Tailwind CSS
+        </span>
+        , complemented by backend skills in{" "}
+        <span className="font-bold">
+          NestJS, Express.js, Supabase, Firebase, Prisma, PostgreSQL, and
+          MongoDB
+        </span>
+        .
+      </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        With a keen eye for design and a problem-solving mindset, I collaborate
+        closely with clients and teams to deliver impactful and efficient
+        digital experiences.
+      </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] font-bold max-w-3xl leading-[30px]"
+      >
+        Let&apos;s build something extraordinary together!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -67,7 +79,7 @@ const About = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");

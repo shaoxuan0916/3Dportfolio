@@ -41,8 +41,10 @@ import tiktik from "./tiktik.png";
 import bantingcomm from "./bantingcomm.png";
 import tpco from "./tpco.png";
 import toonrole from "./toonrole.png";
+import lifeslice from "./life-slice.png";
 
 export {
+  lifeslice,
   moneywho,
   dalle,
   threads,
