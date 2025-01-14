@@ -42,6 +42,7 @@ import bantingcomm from "./bantingcomm.png";
 import tpco from "./tpco.png";
 import toonrole from "./toonrole.png";
 import lifeslice from "./life-slice.png";
+import blox from "./blox.png";
 
 export {
   lifeslice,
@@ -85,4 +86,5 @@ export {
   courtsite,
   tpco,
   toonrole,
+  blox,
 };

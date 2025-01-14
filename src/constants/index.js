@@ -18,6 +18,7 @@ import {
   toonrole,
   tpco,
   lifeslice,
+  blox,
 } from "../assets";
 
 export const navLinks = [
@@ -98,19 +99,17 @@ const experiences = [
     date: "July 2022 - September 2022",
     points: [
       "Developing and maintaining web applications using React.js, Redux Toolkit and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
   {
-    title: "Web Developer",
+    title: "Full-Stack Web Developer",
     company_name: "Freelance",
     icon: freelancer,
     iconBg: "#383E56",
     date: "October 2022 - Present",
     points: [
       "Developing and maintaining web applications & e-commerce website using Nextjs, React.js, Firebase, Supabase and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
       "Understanding client's vision and goals to creating successful web solutions.",
     ],
   },
@@ -118,12 +117,23 @@ const experiences = [
     title: "Software Engineer",
     company_name: "EZ Chain Innovation",
     icon: freelancer,
-    iconBg: "#E6DEDD",
-    date: "September 2023 - Present",
+    iconBg: "#F0F0D7",
+    date: "September 2023 - December 2024",
     points: [
       "Developing and maintaining Web 2 & Web 3 applications using NextJS, NestJS, GraphQL, Ether.js, PostgreSQL, Prisma and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Blox Blockchain",
+    icon: blox,
+    iconBg: "#E6DEDD",
+    date: "January 2025 - Present",
+    points: [
+      "Developing and maintaining Web 3 applications using NextJS, NestJS, Ether.js, PostgreSQL, Prisma, Metamask and other related technologies.",
+      "Enhancing the product's security by implementing best practices in blockchain development and conducting regular code reviews.",
+
     ],
   },
 ];
